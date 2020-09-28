@@ -1,4 +1,7 @@
 #bouton{
+  position: absolute;
+  top: 30%;
+  left: 20%;
   width: 120px;
   border: 1px solid black;
   padding: 10px;
@@ -6,7 +9,7 @@
   font-weight: bold;
   color: #808080;
   text-transform: uppercase;
-  box-shadow: 2px 2px 0px 6px #363636, -1px -1px 0 #363636;
+  box-shadow: inset 0px 1px 0px #aaa, 0px 7px 0px 1px #156785;
   background-color: #f2f2f2;
-  border-radius: 1%;
+  border-radius: 5px;
 }
