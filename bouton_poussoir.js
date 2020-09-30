@@ -2,16 +2,39 @@
 - mettre dans une variable le bouton en le récupérant sur le document
 - cette chose, au clic, je lui fais changer d'apparence avec une fonction particulère
 
+si clic alors on switch de vrai a faux sur une variable avec un CSS différent.
+
+
  */
 
 
-var bouton = document.querySelector('#bouton');
+let bouton = document.querySelector('#bouton');
 
-function boutonOn(){
+let switchOn = true;
+
+function switchOnOff(){
+  
+  if(switchOn){
   bouton.style.color = '#89ed0e';
   bouton.style.background = "#ffffff";
   bouton.style.textShadow = "0px 0px 10px #c8ff85, 0px 0px 10px #c8ff85, 0px 0px 10px #c8ff85";
   bouton.style.boxShadow = "inset 0px 1px 0px #aaa, 0px 1px 0px 1px #156785";
+  
+  switchOn = false;
+
+}else{
+  bouton.style.border = "1px solid black";
+  bouton.style.color = "#808080";
+  bouton.style.boxShadow = "inset 0px 1px 0px #aaa, 0px 7px 0px 1px #156785";
+  bouton.style.boxShadow = "inset 0px 1px 0px #aaa, 0px 7px 0px 1px #156785, 8px 7px 7px grey";
+  
+  switchOn = true;
+}
 }
 
-bouton.addEventListener('click', boutonOn);
+
+	bouton.addEventListener('click', switchOnOff);
+
+
+
+
