@@ -8,8 +8,10 @@
 var bouton = document.querySelector('#bouton');
 
 function boutonOn(){
-  bouton.style.color = 'green';
-  bouton.style.boxShadow = '0px 0px 0px white, -4px -4px 7px grey';
+  bouton.style.color = '#89ed0e';
+  bouton.style.background = "#ffffff";
+  bouton.style.textShadow = "0px 0px 10px #c8ff85, 0px 0px 10px #c8ff85, 0px 0px 10px #c8ff85";
+  bouton.style.boxShadow = "inset 0px 1px 0px #aaa, 0px 1px 0px 1px #156785";
 }
 
 bouton.addEventListener('click', boutonOn);
